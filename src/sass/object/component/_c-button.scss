@@ -1,0 +1,16 @@
+.c-button {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 10px;
+  background-color: #e25c00;
+  border: 2px solid transparent;
+  color: #fff;
+  text-align: center;
+  transition: 0.25s;
+}
+.c-button:focus,
+.c-button:hover {
+  background-color: #fff;
+  border-color: currentColor;
+  color: #e25c00;
+}

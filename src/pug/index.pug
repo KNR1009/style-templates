@@ -1,11 +1,7 @@
 extends layout/_layout.pug
+include object/component/_mixin.pug
+
 
 block contents
   section.content コンテンツ
-  //- バックグランドが異なるコンテンツの場合
-  section.content.content-bg-color-base コンテンツ
-
-
-
-
-
+    include object/project/p-minimum-project
