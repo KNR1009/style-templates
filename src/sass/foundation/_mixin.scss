@@ -1,0 +1,36 @@
+/* mixinを一元的に管理 */
+
+$md: 1023px;
+$pc: 1024px;
+
+// レスポンシブ
+@mixin md {
+  @media (max-width: ($md)) {
+    @content;
+  }
+}
+// PC版
+@mixin pc {
+  @media (min-width: ($pc)) {
+    @content;
+  }
+}
+
+// pcのみ適応
+.p-pc {
+  @include pc {
+    display: block;
+  }
+  @include md {
+    display: none;
+  }
+}
+// spのみ適応
+.p-sp {
+  @include md {
+    display: block;
+  }
+  @include pc {
+    display: none;
+  }
+}

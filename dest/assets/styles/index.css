@@ -1,1 +1,86 @@
-p{color:red}
+@charset "UTF-8";
+body,
+h1,
+h2 {
+  color: #282828;
+}
+body,
+figure,
+p {
+  margin: 0;
+}
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka,
+    "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: normal;
+}
+h1,
+h2 {
+  background: 0 0;
+}
+h1 {
+  font-size: 32px;
+  -webkit-margin-before: 0.67em;
+  margin-block-start: 0.67em;
+  -webkit-margin-after: 0.67em;
+  margin-block-end: 0.67em;
+}
+h2 {
+  font-size: 24px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: block;
+}
+a.inline-link {
+  display: inline;
+  text-decoration: underline;
+  color: inherit;
+}
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+section {
+  padding: 20px 0;
+  margin: 20px 0;
+}
+button {
+  padding: 0;
+  border-color: transparent;
+}
+@media (min-width: 1024px) {
+  .p-pc {
+    display: block;
+  }
+}
+@media (max-width: 1023px) {
+  .p-pc {
+    display: none;
+  }
+  .p-sp {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
+  .p-sp {
+    display: none;
+  }
+}
