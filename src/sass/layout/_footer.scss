@@ -1,4 +1,13 @@
-@import "./_header";
-@import "./_main";
-@import "./_footer";
-@import "./_side";
+.l-footer {
+  padding: 20px 0 20px 0;
+  background-color: #222;
+}
+
+.l-footer__inner {
+  max-width: 1230px;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
+}
+.l-footer--border-top-gray {
+  border-top: 1px solid #777;
+}

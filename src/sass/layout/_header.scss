@@ -1,0 +1,11 @@
+.l-header {
+  // 画面トップにつかないように
+  padding-top: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.l-header__inner {
+  max-width: 1230px;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
+}
