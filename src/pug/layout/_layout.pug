@@ -1,3 +1,4 @@
+
 doctype html
 html(lang='ja')
   head
@@ -10,8 +11,10 @@ html(lang='ja')
     block end_head
 
   body
+    include ./_header
     main.l-main 
       block contents
+    include ./_footer
     script(src='./assets/scripts/index.js')
 
 
