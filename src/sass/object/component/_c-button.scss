@@ -1,11 +1,12 @@
 .c-button {
   display: inline-block;
-  width: 100%;
+  width: 300px;
+  max-width: 100%;
+  // height: 20px;
   padding: 20px 10px;
   background-color: #e25c00;
   border: 2px solid transparent;
   color: #fff;
-  text-align: center;
   transition: 0.25s;
 }
 .c-button:focus,
@@ -13,4 +14,27 @@
   background-color: #fff;
   border-color: currentColor;
   color: #e25c00;
+}
+/* 矢印付きボタン */
+.c-button--arrow-right {
+  position: relative;
+  padding-right: 2em;
+  padding-left: 1.38rem;
+}
+.c-button--arrow-right::after {
+  content: "\f061";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* 大きいボタン */
+.c-button--large {
+  width: 340px;
+  padding: 25px 15px;
+}
+/* 色が異なるボタン */
+.c-button--warning {
+  background-color: #f1de00;
+  color: #222;
 }
